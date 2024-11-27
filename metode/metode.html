@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="metode.css">
+
+	<title>Metode</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="/foto/Untitled-1-01-removebg-preview-removebg-preview.png" height="30px" width="30px" alt="">
+			
+			<span class="text">Unit Produksi</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="/DashboardUP/dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+            <li>
+				<a href="/kategori/kategori.html">
+					<i class='bx bxs-bookmark-star'></i>
+					<span class="text">Kategori Produk</span>
+				</a>
+			</li>
+            <li>
+				<a href="/Produk/produk.html">
+					<i class='bx bx-package'></i>
+					<span class="text">Produk</span>
+				</a>
+            </li>
+                <li class="active">
+				<a href="/metode/metode.html">
+					<i class='bx bxs-credit-card-alt'></i>
+					<span class="text">Metode Pembayaran</span>
+				</a>
+                </li>
+			<li>                                  
+				<a href="/transaksi/transaksi.html">
+					<i class='bx bx-transfer'></i>
+                    <span class="text">Transaksi</span>
+				</a>
+			</li>
+			<li>                                  
+				<a href="/detail/detail.html">
+					<i class='bx bx-detail'></i>
+                    <span class="text">Detail Transaksi</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<!-- <div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div> -->
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			
+              
+			 <!-- <div>
+				<img src="/foto/profil.jpg" class="user-pic">
+				<div class="sub-menu-wrap" >
+					<div class="sub-menu">
+						<div class="user-info">
+							<img src="/foto/profil.jpg">
+							<h1>Spider Man</h1>
+						</div>
+						<hr>
+                       <div>
+                        <a href="#" class="sub-menu-link"> 
+							<i class='bx bx-user'></i>
+							<p>Edite Profile</p>
+							<span>></span>
+						</a>
+
+
+						<a href="#" class="sub-menu-link">
+							<i class='bx bx-exit'></i>
+							<p>Logout</p>
+							<span>></span>
+						</a>
+                       </div>
+				  </div>
+			 </div>  -->
+
+			 <div>
+
+				<button class="profil-btn" id="myBtn">
+					<i class='bx bx-user'></i>
+					<!-- <h3>Profile</h3> -->
+				</button>
+
+			</div>
+			  
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+<i class='bx bxs-user'> <a href="/update/updateprofil.html">Edit Profil</a></i>
+<i class='bx bxs-user-plus'> <a href="/DashboardUP/newadmin/new.html">New Admin</a></i>
+<i class='bx bxs-log-in'> <a href="#">Logout</a></i>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+		 </div> 
+
+
+			
+		  
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Metode Pembayaran</h1>
+					<ul class="breadcrumb">
+						<li>
+							<li>
+								 <button><a href="#">+Add Payment</a></button>
+							</li>
+						</li>
+					</ul>
+				</div>
+				
+                <form action="#">
+					<div class="form-input">
+						<input type="search" placeholder="Search...">
+						<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+					</div>
+				</form>
+
+
+			</div>
+			<div class="table-responsive">
+				<table>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Metode Pembayaran</th>
+							<th>No Rekening</th>
+							<th>Nama Akun</th>
+							<th>Aksi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01</td>
+							<td>BRI</td>
+							<td>123456789</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>02</td>
+							<td>Dana</td>
+							<td>082214768061</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>03</td>
+							<td>OVO</td>
+							<td>1234596626579</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+                        
+						<tr>
+							<td>04</td>
+							<td>GoPay</td>
+							<td>1234596626579</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>05</td>
+							<td>BCA</td>
+							<td>1234596626579</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>06</td>
+							<td>BNI</td>
+							<td>12363126731728</td>
+							<td>Unit MAKN Ende</td>
+							<td>
+								<span class="action_btn">
+									<a href="#"><i class='bx bx-edit'></i></a>
+									<a href="#"><i class='bx bx-trash' ></i></a>
+								</span>
+							</td>
+						</tr>
+
+						
+					</tbody>
+				</table>
+			</div>
+			
+			</div>
+			<div class="pagenation">
+				<a href="#">&laquo;</a>
+				<a href="#"class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+                <a href="#">5</a>
+				<a href="#">&raquo;</a>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	  
+
+	<script src="metode.js"></script>
+	<!-- <script>
+		let submenu = document.getElementById("sub-menu-wrap");
+		function togglemenu(){
+			submenu.classList.toggle("open-menu");
+		}
+	</script>	 -->
+</body>
+</html>
